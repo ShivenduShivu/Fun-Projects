@@ -1,0 +1,65 @@
+import pyttsx3
+import time
+from playsound import playsound
+
+engine = pyttsx3.init()
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[0].id)
+
+engine.setProperty('rate', 160)
+name = str(input("Enter your name :"))
+engine.say("hello..!")
+engine.say(name)
+engine.say("I have been waiting for you, welcome to Australia. Meet my special agent, Sophia ")
+engine.setProperty('voice', voices[1].id)
+engine.setProperty('rate', 160)
+engine.say("hello..!")
+engine.say(name)
+engine.say("I am Sophia. Let me introduce you to the present condition. This is the bomb which I was talking for")
+engine.say("This has been made by a very complex code. We are provided only one chance to diffuse it.")
+engine.say("Here are the clue given by the bomber")
+engine.runAndWait()
+playsound("D:\music for game\TunePocket-Clean-Ripple-Audio-Logo-Beat-SFX-Edit-Preview.mp3")
+engine.setProperty('voice', voices[0].id)
+engine.say("This is a four digit code consists of number and alphabet.")
+engine.say("First one is seventeenth alphabet from end")
+print("0. This is a four digit code consists of number and alphabet","\n1. First one is seventeenth alphabet from end")
+engine.say("Second one is the middle digit of a very famous number generally pronounced with BILLAa ")
+print("2. Second one is the middle digit of a very famous number generally pronounced with BILLA ")
+engine.say("Third one is the first letter of the name of the most prettiest and talented educator of CS at Unacademy")
+print("3. Third one is the first letter of the name of the most prettiest and talented educator of CS at Unacademy")
+engine.say("Fourth one is the total number of union territories in India")
+print("4. Fourth one is the total number of union territories in India.")
+engine.runAndWait()
+engine.setProperty('voice', voices[1].id)
+engine.setProperty('rate',160)
+engine.say("Now everything is in your hand agent, please save us")
+print('*'* 50)
+code = input("ENTER YOUR CODE HERE :")
+engine.say("code processing...")
+print("Code processing...")
+engine.runAndWait()
+time.sleep(2)
+engine.say("Initialising code...")
+print("Initialising code...")
+engine.runAndWait()
+time.sleep(2)
+playsound("D:\music for game\mixkit-sci-fi-ship-alert-768.wav")
+
+if code == ('j8a8' or 'J8a8' or 'j8A8' or 'J8A8'):
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[0].id)
+    engine.say("Well done!! agent, you did it. You saved your people")
+    engine.runAndWait()
+    playsound("D:\music for game\PBAFGLW-applause-and-ovations.mp3")
+
+else:
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[0].id)
+    engine.say("Sorry!!! agent you could not save your people. You faied!!!")
+    engine.runAndWait()
+    playsound("D:\music for game\mixkit-sci-fi-ship-alert-768.wav")
+    playsound("D:\music for game\mixkit-trailer-screaming-people-annihilation-351.wav")
+
+
+    
