@@ -1,10 +1,10 @@
 <!-- ===================== BANNER ===================== -->
 
 ```
-                                                ====================================
-                                                        FUN PROJECTS PLAYGROUND
-                                                ====================================
-                                                Curiosity • Experiments • Building
+====================================
+        FUN PROJECTS PLAYGROUND
+====================================
+Curiosity • Experiments • Building
 
 ```
 
